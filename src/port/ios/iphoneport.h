@@ -23,7 +23,7 @@
 #define _IPHONE_PORT
 
 #ifndef __cplusplus
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 #endif 
 
 #define UPNPX_PREFFERED_IFACE "en"

@@ -187,6 +187,7 @@
 		15C44F46132C45B60013D453 /* SoapActionsContentDirectory1.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C44F38132C45B60013D453 /* SoapActionsContentDirectory1.h */; };
 		15C44F47132C45B60013D453 /* SoapActionsRenderingControl1.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C44F39132C45B60013D453 /* SoapActionsRenderingControl1.h */; };
 		15C44F48132C45B60013D453 /* UPnPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C44F3A132C45B60013D453 /* UPnPManager.h */; };
+		8AEE913A1AF2CC8F00A83AF3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEE91391AF2CC8F00A83AF3 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -372,6 +373,7 @@
 		15C44F38132C45B60013D453 /* SoapActionsContentDirectory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoapActionsContentDirectory1.h; path = ../../../../src/api/SoapActionsContentDirectory1.h; sourceTree = "<group>"; };
 		15C44F39132C45B60013D453 /* SoapActionsRenderingControl1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoapActionsRenderingControl1.h; path = ../../../../src/api/SoapActionsRenderingControl1.h; sourceTree = "<group>"; };
 		15C44F3A132C45B60013D453 /* UPnPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPnPManager.h; path = ../../../../src/api/UPnPManager.h; sourceTree = "<group>"; };
+		8AEE91391AF2CC8F00A83AF3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEE913A1AF2CC8F00A83AF3 /* Cocoa.framework in Frameworks */,
 				15BAC4F8132C22BA00F5C41A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +409,7 @@
 		15BAC4F6132C22BA00F5C41A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AEE91391AF2CC8F00A83AF3 /* Cocoa.framework */,
 				15BAC4F7132C22BA00F5C41A /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -912,7 +916,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -924,7 +928,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
@@ -938,9 +942,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = UPNPX_IOS;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../../src/api ../../../src/port/ios ../../../src/common";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../src/api ../../../src/port/macos ../../../src/common";
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
@@ -955,9 +961,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = UPNPX_IOS;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../../src/api ../../../src/port/ios ../../../src/common";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../src/api ../../../src/port/macos ../../../src/common";
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;

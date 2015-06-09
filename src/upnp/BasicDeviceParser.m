@@ -221,7 +221,7 @@
     if(ret == 0 && iconURL != nil){
         NSURL *u = [NSURL URLWithString:iconURL relativeToURL:device.baseURL];
         NSData *imageData = [NSData dataWithContentsOfURL:u];
-        UIImage *i = [UIImage imageWithData:imageData];
+        CIImage *i = [CIImage imageWithData:imageData];
         [device setSmallIcon:i];
     }
 

@@ -59,7 +59,7 @@
     NSString *udn;
     NSString *usn;
     NSString *urn;
-    CIImage *smallIcon;
+    NSImage *smallIcon;
     int smallIconHeight;
     int smallIconWidth;
     int smallIconDepth;
@@ -93,7 +93,7 @@
 @property(readwrite, retain) NSString *udn;
 @property(readwrite, retain) NSString *usn;
 @property(readwrite, retain) NSString *urn;
-@property(readwrite, retain) CIImage *smallIcon;
+@property(readwrite, retain) NSImage *smallIcon;
 @property(readwrite) int smallIconHeight;
 @property(readwrite) int smallIconWidth;
 @property(readwrite) int smallIconDepth;

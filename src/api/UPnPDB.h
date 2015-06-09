@@ -53,7 +53,7 @@
 
 @interface UPnPDB : NSObject <SSDPDB_ObjC_Observer>
 
--(instancetype)initWithSSDP:(SSDPDB_ObjC*)ssdp NS_DESIGNATED_INITIALIZER;
+-(instancetype)initWithSSDP:(SSDPDB_ObjC*)ssdp;
 
 -(void)lock;
 -(void)unlock;

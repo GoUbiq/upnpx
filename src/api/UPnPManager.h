@@ -45,7 +45,7 @@
 
 +(UPnPManager*)GetInstance;
 
--(instancetype)init NS_DESIGNATED_INITIALIZER;
+-(instancetype)init;
 
 @property(readonly) SSDPDB_ObjC *SSDP;
 @property(readonly) UPnPDB *DB;

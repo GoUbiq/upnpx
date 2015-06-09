@@ -68,7 +68,7 @@
     NSRecursiveLock *mMutex;
 }
 
--(instancetype)initWithSSDPDevice:(SSDPDBDevice_ObjC*)device NS_DESIGNATED_INITIALIZER;
+-(instancetype)initWithSSDPDevice:(SSDPDBDevice_ObjC*)device;
 
 -(NSUInteger)addObserver:(BasicUPnPServiceObserver*)obs;
 -(NSUInteger)removeObserver:(BasicUPnPServiceObserver*)obs;

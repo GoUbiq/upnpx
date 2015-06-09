@@ -36,7 +36,7 @@
 #import "SSDPDB_ObjC.h"
 #import "BasicUPnPService.h"
 
-#import "iphoneport.h"
+//#import "iphoneport.h"
 
 @interface BasicUPnPDevice : NSObject {
 @private
